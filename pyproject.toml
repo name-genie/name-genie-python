@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "name-genie"
+version = "0.0.1"
+description = "一个用于生成名字的工具"
+authors = ["lhlyu"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "name_genie"}]
+repository = "https://github.com/name-genie/name-genie-python"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.group.dev.dependencies]
+skip = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

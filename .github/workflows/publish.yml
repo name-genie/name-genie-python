@@ -1,0 +1,40 @@
+name: Python package
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Update Git Submodule
+        run: git submodule init && git submodule update
+
+      - uses: actions/checkout@v3
+      - name: Build and publish to pypi
+        uses: JRubics/poetry-publish@v1.16
+        with:
+          pypi_token: ${{ secrets.PYTHON_TOKEN }}
+
+      - name: Extract version from package
+        uses: sergeysova/jq-action@v2
+        id: version
+        with:
+          cmd: 'jq .version package.json -r'
+
+      - name: Show my version
+        run: 'echo "version ${{ steps.version.outputs.value }}"'
+
+      - name: Create Release
+        uses: actions/create-release@v1
+        id: create_release
+        with:
+          tag_name: v${{ steps.version.outputs.value }}
+          release_name: Release v${{ steps.version.outputs.value }}
+          draft: false
+          prerelease: ${{ contains(steps.version.outputs.value, '-') }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.NAME_GENIE_TOKEN }}
