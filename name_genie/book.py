@@ -1,6 +1,6 @@
 from typing import List
-from common import data_book_state, data_book_suffix, data_book_interfix, data_shared_dao, data_shared_element, data_shared_creature, data_shared_thing, data_shared_adj, data_shared_number, data_shared_gesture, data_shared_action
-from util import to_str
+from name_genie.common import data_book_state, data_book_suffix, data_book_interfix, data_shared_dao, data_shared_element, data_shared_creature, data_shared_thing, data_shared_adj, data_shared_number, data_shared_gesture, data_shared_action
+from name_genie.util import to_str
 import random
 
 __all__ = ['get_books']

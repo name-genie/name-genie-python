@@ -1,6 +1,6 @@
 from typing import List
-from common import data_creature_interfix, data_creature_suffix, data_shared_action, data_shared_adj, data_shared_creature, data_shared_dao, data_shared_element, data_shared_gesture, data_shared_thing
-from util import to_str
+from name_genie.common import data_creature_interfix, data_creature_suffix, data_shared_action, data_shared_adj, data_shared_creature, data_shared_dao, data_shared_element, data_shared_gesture, data_shared_thing
+from name_genie.util import to_str
 import random
 
 __all__ = ['get_creatures']

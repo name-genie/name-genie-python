@@ -1,6 +1,6 @@
 from typing import List
-from common import data_name_prefix, data_name_interfix, data_name_male_suffix, data_name_female_suffix
-from util import to_str
+from name_genie.common import data_name_prefix, data_name_interfix, data_name_male_suffix, data_name_female_suffix
+from name_genie.util import to_str
 import random
 
 __all__ = ['get_names']

@@ -1,6 +1,6 @@
 from typing import List
-from common import data_dao_stem, data_dao_male_suffix, data_dao_female_suffix, data_shared_dao, data_shared_thing, data_shared_adj, data_shared_number
-from util import to_str
+from name_genie.common import data_dao_stem, data_dao_male_suffix, data_dao_female_suffix, data_shared_dao, data_shared_thing, data_shared_adj, data_shared_number
+from name_genie.util import to_str
 import random
 
 __all__ = ['get_daos']

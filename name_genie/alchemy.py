@@ -1,6 +1,6 @@
 from typing import List
-from common import data_alchemy_suffix,data_shared_action, data_shared_color, data_shared_dao, data_shared_element, data_shared_number
-from util import to_str
+from name_genie.common import data_alchemy_suffix,data_shared_action, data_shared_color, data_shared_dao, data_shared_element, data_shared_number
+from name_genie.util import to_str
 import random
 
 __all__ = ['get_alchemies']

@@ -1,6 +1,6 @@
 from typing import List
-from common import data_nation_interfix, data_nation_suffix, data_shared_place
-from util import to_str
+from name_genie.common import data_nation_interfix, data_nation_suffix, data_shared_place
+from name_genie.util import to_str
 import random
 
 __all__ = ['get_nations']

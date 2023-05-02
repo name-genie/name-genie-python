@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "name-genie"
-version = "0.0.1"
+version = "0.0.2"
 description = "一个用于生成名字的工具"
 authors = ["lhlyu"]
 license = "MIT"
