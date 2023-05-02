@@ -9,7 +9,7 @@ packages = [{include = "name_genie"}]
 repository = "https://github.com/name-genie/name-genie-python"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.9"
 
 [tool.poetry.group.dev.dependencies]
 skip = "^0.1.0"
