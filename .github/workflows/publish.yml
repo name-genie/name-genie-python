@@ -10,10 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - uses: actions/checkout@v3
+
       - name: Update Git Submodule
         run: git submodule init && git submodule update
 
-      - uses: actions/checkout@v3
       - name: Build and publish to pypi
         uses: JRubics/poetry-publish@v1.16
         with:
